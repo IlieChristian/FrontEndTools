@@ -1,0 +1,159 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .description_text h3 {
+        font-size: 23px;
+        padding-bottom: 12px;
+    }
+    .container_box_img {
+        min-height: 400px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 9px 19px;
+    }
+    .description_text {
+        padding: 10px 12px 9px 0px;
+    }
+    .description_text h3 {
+        font-size: 17px;
+        padding-bottom: 6px;
+    }
+    .description_text span {
+        font-size: 16px;
+        line-height: 15px;
+        padding-bottom: 7px;
+    }
+    .description_text p {
+        font-size: 15px;
+        line-height: 24px;
+        padding-bottom: 14px;
+    }
+    .container_box_img {
+        min-height: 350px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .description_text {
+        padding: 20px 25px 20px 25px;
+    }
+    .navigation.navbar {
+        float: right;
+        display: inherit !important;
+        padding: 0;
+        width: 100%;
+        padding-top: 0px !important;
+    }
+    .navigation .navbar-collapse {
+        background: #e76f64;
+        padding: 20px;
+        margin-top: 76px;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+    .navigation.navbar-dark .navbar-toggler {
+        border: inherit;
+        float: right;
+        padding-top: 7px;
+    }
+    .navigation.navbar-dark .navbar-toggler-icon {
+        background: url(../images/menu_icon.png);
+        background-repeat: no-repeat;
+    }
+    .d_none {
+        display: none;
+    }
+    .container_box_img {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .description_text h3 {
+        font-size: 19px;
+        padding-bottom: 11px;
+    }
+    .description_text {
+        padding: 20px 25px 20px 25px;
+    }
+    .navigation.navbar {
+        float: right;
+        display: inherit !important;
+        padding: 0;
+        padding-top: 0px !important;
+        width: 100%;
+    }
+    .navigation .navbar-collapse {
+        background: #e76f64;
+        padding: 20px;
+        margin-top: 76px;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        font-size: 17px;
+    }
+    .navigation.navbar-dark .navbar-toggler {
+        float: right;
+        border: inherit;
+        margin-top: 3px;
+    }
+    .container_box_img {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hamburger--emphatic {
+        overflow: hidden; 
+    }
+    .hamburger--emphatic .hamburger-inner {
+        transition: background-color 0.125s 0.175s ease-in; 
+    }
+    .hamburger--emphatic .hamburger-inner::before {
+        left: 0;
+        transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in; 
+    }
+    .hamburger--emphatic .hamburger-inner::after {
+        top: 10px;
+        right: 0;
+        transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in; 
+    }
+    .hamburger--emphatic.is-active .hamburger-inner {
+        transition-delay: 0s;
+        transition-timing-function: ease-out;
+        background-color: transparent !important; 
+    }
+    .hamburger--emphatic.is-active .hamburger-inner::before {
+        left: -80px;
+        top: -80px;
+        transform: translate3d(80px, 80px, 0) rotate(45deg);
+        transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .hamburger--emphatic.is-active .hamburger-inner::after {
+        right: -80px;
+        top: -80px;
+        transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+        transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .row{
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #hamburgerButton{
+        display: none !important;
+    }
+}
