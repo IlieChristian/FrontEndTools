@@ -813,3 +813,34 @@ button {
 }
 
 /* #11 */
+
+/* #13 */
+
+.iconscout {
+     max-height: 300px;
+}
+
+/* #13 */
+
+/* #14 */
+
+.getwaves {
+     display: grid;
+     align-items: end;
+}
+
+/* #14 */
+
+/* #17 */
+
+.blobmaker {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.blobmakerimg {
+     max-width: 300px;
+}
+
+/* #17 */
